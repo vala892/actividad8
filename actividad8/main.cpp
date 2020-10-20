@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    componentes p02 = componentes("pc mater", "windows", 500, 32);
+    componentes p02 = componentes("pc master", "windows", 500, 32);
     componentes p03;
     p03.setNombre("pc prueba");
     p03.setsistema("mac");
@@ -13,8 +13,13 @@ int main() {
 
      computadora vj;
 
-    vj.agregarcomponente(p02);
-    vj.agregarcomponente(p03);
+    vj << p02 << p03;
+
+    //vj.agregarcomponente(p02);
+    //vj.agregarcomponente(p03);
+    componentes p04;
+    cin >> p04;
+    vj << p04;
 
     vj.mostrar();
 

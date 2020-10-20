@@ -18,12 +18,19 @@ void computadora::agregarcomponentes(const componentes &p)
 
 void computadora::mostrar()
 {
+     cout << left;
+    cout << setw(10) << "Nombre";
+    cout << setw(10) << "sistema";
+    cout << setw(8) << "memoria";
+    cout << setw(6) << "ram";
+    cout << endl;
     for (size_t i = 0; i < cont; i++) {
         componentes &p = arreglo[i];
-        cout << "Nombre: " << p.getNombre() << endl;
-        cout << "sistema: " << p.getsistema() << endl;
-        cout << "memoria: " << p.getmemoria() << endl;
-        cout << "ram: " << p.getram() << endl;
-        cout << endl;
+        cout << p;
+        //cout << "Nombre: " << p.getNombre() << endl;
+        //cout << "sistema: " << p.getsistema() << endl;
+        //cout << "memoria: " << p.getmemoria() << endl;
+        //cout << "ram: " << p.getram() << endl;
+        //cout << endl;
     }
 }

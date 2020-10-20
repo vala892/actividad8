@@ -11,6 +11,13 @@ public:
     computadora();
     void agregarcomponentes(const componentes &p);
     void mostrar();
+
+    friend computadora& operator<<(computadora &v, const componentes &p)
+    {
+        v.agregarcomponentes(p);
+
+        return v;
+    }
 };
 
 #endif 
