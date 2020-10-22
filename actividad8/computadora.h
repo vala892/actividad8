@@ -11,6 +11,9 @@ public:
     computadora();
     void agregarcomponentes(const componentes &p);
     void mostrar();
+    void respaldar_tabla();
+    void respaldar();
+    void recuperar();
 
     friend computadora& operator<<(computadora &v, const componentes &p)
     {
